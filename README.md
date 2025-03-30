@@ -1,2 +1,2 @@
 # curriculo
-Currículo - Atividade Prática Uninter 
+CV - Gabriel Feo - Atividade Prática Uninter

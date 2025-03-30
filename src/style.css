@@ -1,0 +1,272 @@
+/* Reseta as configurações de margin e padding da página, para que o browser não tenha influência */
+* {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+
+/*Body e main*/
+body {
+  background-color: #fff;
+  font-family: "Source Sans Pro", Arial, sans-serif; /*Define a fonte principal e o seu fallback caso a fonte não esteja instalada*/
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+main {
+  width: 960px; /* Largura fixa da página */
+  margin: 120px auto 50px; /*Centraliza o conteudo, com as margens automáticas*/
+}
+
+/* Menu */
+ /*Faz com que o menu fique fixado sempre no topo da janela e ocupe toda a largura disponível*/
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1a1a1a;
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+  z-index: 1000;
+}
+
+nav .nome {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+nav ul {
+  list-style: none; /*Remove os marcadores, assim os itens do menu não ficaram com a bolinha do lado*/
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline; /*Muda a orientação dos links do menu para ficar na horizontal*/
+  margin: 0 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff6f61;
+}
+
+/*  Estilos geral das sessões */
+section {
+  display: none;
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+section h1 {
+  font-size: 26px;
+  color: rgba(0, 0, 0, 0.85);
+  margin-bottom: 20px;
+  text-transform: uppercase; /*Transforma todos os H1 da sessão em maiuscula*/
+}
+
+section h2 {
+  margin-bottom: 4px;
+  font-size: 19px;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+section h3 {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 17px;
+}
+
+p,
+ul li {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+/* Sessão portfolio */
+.item-portfolio {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /*Adiciona transição no item do portfolio para dar um delay*/
+}
+
+.item-portfolio:hover {
+  transform: translateY(-5px); /*Move o item do portfolio para cima no eixo y*/
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.item-portfolio h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #000;
+  display: inline-block;
+}
+
+.item-portfolio p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.item-portfolio .etiqueta {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #eee;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.item-portfolio .link-acesso {
+  position: absolute; /*Posiciona o link ↗ fixo no canto superior direito do container (item-portfolio)*/
+  top: 15px;
+  right: 15px;
+  color: #666;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.item-portfolio .link-acesso:hover {
+  color: #ff6f61;
+}
+
+/* Contato */
+section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+section input,
+section textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+}
+
+section textarea {
+  resize: vertical; /*Permite ajustar o textarea, apenas na vertical*/
+}
+
+section button {
+  width: 100px;
+  background-color: #ff6f61;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+section button:hover {
+  background-color: #f15345;
+}
+
+/* SEssão formação/educação */
+#formacao .item-educacao {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+#formacao .item-educacao .instituicao {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.85);
+  margin-bottom: 5px;
+}
+
+#formacao .item-educacao .periodo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#formacao .item-educacao .curso {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.85);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+#formacao .item-educacao .descricao {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 10px;
+}
+
+#formacao .item-educacao .icone {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+#formacao .idiomas {
+  margin-top: 20px;
+}
+
+#formacao .idiomas h2 {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.85);
+  margin-bottom: 10px;
+}
+
+#formacao ul {
+  margin-left: 20px;
+}
+
+/* Sessão experiência */
+.detalhe-experiencia .titulo {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 1.2em;
+}
+
+.detalhe-experiencia table {
+  width: 90%;
+  margin: auto;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.detalhe-experiencia table .titulo {
+  font-size: 1.1em;
+  width: 90%;
+}
+
+.detalhe-experiencia table .ultima-linha {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e6e9ec;
+}
+
+.detalhe-experiencia table img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CV de Gabriel Carvalho, desenvolvedor de sistemas">
+    <title>CV - Gabriel Carvalho</title>
+    <link rel="stylesheet" href="src/style.css">
+  </head>
+  <body>
+    <!-- Menu -->
+    <nav>
+      <div class="nome">Gabriel Carvalho</div>
+      <ul>
+        <li><a href="#sobre" onclick="exibir('sobre')">Sobre mim</a></li>
+        <li><a href="#portfolio" onclick="exibir('portfolio')">Portfólio</a></li>
+        <li><a href="#formacao" onclick="exibir('formacao')">Formação</a></li>
+        <li><a href="#experiencia" onclick="exibir('experiencia')">Experiência</a></li>
+        <li><a href="#contato" onclick="exibir('contato')">Contato</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Sobre mim -->
+      <section id="sobre">
+        <h1>Sobre mim</h1>
+        <p>
+          Olá! Meu nome é Gabriel Feo de Carvalho, tenho 26 anos e sou de
+          Curitiba, PR. Sou apaixonado por tecnologia. Atualmente,
+          estou cursando Análise e Desenvolvimento de Sistemas na UNINTER. Nas
+          horas vagas, gosto de jogar vídeo game, assitir futebol ou um anime.
+        </p>
+      </section>
+
+      <!-- Portfólio -->
+      <section id="portfolio">
+        <h1>Portfólio</h1>
+        <div class="item-portfolio">
+          <h2>BotTemAula <span class="etiqueta">C#</span></h2>
+          <a
+            href="https://github.com/carvalho57/BotTemaula"
+            class="link-acesso"
+            target="_blank"
+            >↗</a
+          >
+          <p>
+            Um bot feito para o grupo do tem aula
+            <a href="https://t.me/TemAula">https://t.me/TemAula</a>
+          </p>
+        </div>
+        <div class="item-portfolio">
+          <h2>sefaz-monitor <span class="etiqueta">PHP</span></h2>
+          <a
+            href="https://github.com/carvalho57/sefaz-monitor"
+            class="link-acesso"
+            target="_blank"
+            >↗</a
+          >
+          <p>
+            Disponibiliza um mapa do Brasil e informa o status da NF-e para cada
+            estado, utilizando o webservice NfeStatusServico
+          </p>
+        </div>
+        <div class="item-portfolio">
+          <h2>radar-nfe <span class="etiqueta">PHP</span></h2>
+          <a
+            href="https://github.com/carvalho57/radar-nfe"
+            class="link-acesso"
+            target="_blank"
+            >↗</a
+          >
+          <p>Projeto para aplicar OOP</p>
+        </div>
+        <div class="item-portfolio">
+          <h2>Organizer <span class="etiqueta">C#</span></h2>
+          <a
+            href="https://github.com/carvalho57/organizer"
+            class="link-acesso"
+            target="_blank"
+            >↗</a
+          >
+          <p>Organiza os arquivos por data ou tipo, também permite comprimir</p>
+        </div>
+        <div class="item-portfolio">
+          <h2>TicTacToe <span class="etiqueta">C#</span></h2>
+          <a
+            href="https://github.com/carvalho57/TicTacToe"
+            class="link-acesso"
+            target="_blank"
+            >↗</a
+          >
+          <p>Jogo da velha no console.</p>
+        </div>
+      </section>
+
+      <!-- Formação -->
+      <section id="formacao">
+        <h1>Formação</h1>
+        <div class="item-educacao">
+          <span class="instituicao">UNINTER</span>
+          <span class="periodo">Fevereiro 2019 - Atual</span>
+          <div class="curso">
+            Tecnólogo, Análise e Desenvolvimento de Sistemas
+          </div>
+          <p class="descricao">
+            Análise e Desenvolvimento de Sistemas é um curso que prepara o
+            universitário para projetar e implementar novos softwares. O
+            profissional formado em Análise e Desenvolvimento de Sistemas será
+            capaz de desenvolver, analisar, projetar, implementar e atualizar
+            sistemas de informação de diferentes áreas.
+          </p>
+        </div>
+        <div class="item-educacao">
+          <span class="instituicao">SENAI</span>
+          <span class="periodo">Fevereiro 2017 - Julho 2018</span>
+          <div class="curso">Técnico em Informática</div>
+          <p class="descricao">
+            O curso técnico em Informática capacita o profissional para atuar no
+            desenvolvimento, manutenção e suporte de sistemas e redes de
+            computadores, além de oferecer conhecimentos em programação e gestão
+            de tecnologia da informação.
+          </p>
+        </div>
+        <div class="idiomas">
+          <h2>Idiomas</h2>
+          <ul>
+            <li>Português - Nativo</li>
+            <li>Inglês - Básico</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Experiências -->
+      <section class="section detalhe-experiencia" id="experiencia">
+        <h1>Experiência</h1>
+        <table>
+          <thead>
+              <tr>
+                  <th></th>
+                  <th class="titulo">Desenvolvedor Junior</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td rowspan="4">
+                      <img src="src/img/employer_logo.png" alt="Employer Tecnologia">
+                  </td>
+                  <td>ETEG - Employer Gestão e Tecnologia</td>
+              </tr>
+              <tr>
+                  <td>Período: 17/05/2024 – Atual</td>
+              </tr>
+              <tr>
+                  <td>Localidade: Colombo, PR</td>
+              </tr>
+              <tr>
+                  <td class="ultima-linha">Implementação e manutenção no sistema de ponto</td>
+              </tr>
+          </tbody>
+      </table>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th class="titulo">Desenvolvedor PHP</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4">
+                        <img src="src/img/hardness.jpg" alt="Hardness Sistemas">
+                    </td>
+                    <td>Hardness Sistemas de Gestão Empresarial</td>
+                </tr>
+                <tr>
+                    <td>Período: 03/03/2022 – 17/05/2024 | Duração: 2 anos e 2 meses</td>
+                </tr>
+                <tr>
+                    <td>Localidade: Curitiba, PR</td>
+                </tr>
+                <tr>
+                    <td class="ultima-linha">Implementação e correções no ERP, integrações com Stone e Tecnospeed, além de implementação de documentos fiscais (NF-e, NFC-e e CT-e).</td>
+                </tr>
+            </tbody>
+        </table>
+      </section>
+
+      <!-- Contato -->
+      <section id="contato">
+        <h1>Contato</h1>
+        <form>
+          <input type="text" placeholder="Nome" required />
+          <input type="email" placeholder="Email" required />
+          <textarea
+            placeholder="Digite sua mensagem"
+            rows="5"
+            required
+          ></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <script src="src/main.js"></script>
+  </body>
+</html>
